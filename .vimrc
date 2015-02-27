@@ -45,6 +45,10 @@ set modeline
 set shiftround
 set t_Co=256
 
+autocmd Filetype html setlocal noexpandtab tabstop=2 shiftwidth=2
+autocmd Filetype css setlocal noexpandtab tabstop=2 shiftwidth=2
+autocmd Filetype python setlocal noexpandtab tabstop=4 shiftwidth=4
+
 "colorscheme miku
 "colorscheme blacklight
 colorscheme vimbrant
@@ -157,7 +161,7 @@ set completeopt=menu,preview
 
 " UltiSnips Settings
 " Trigger configuration. Do not use <tab> if you use YCM
-let g:UltiSnipsExpandTrigger='<S-F>'
+let g:UltiSnipsExpandTrigger='<C-H>'
 let g:UltiSnipsJumpForwardTrigger='<C-J>'
 let g:UltiSnipsJumpBackwardTrigger='<C-K>'
 
@@ -167,7 +171,8 @@ let g:UltiSnipsEnableSnipMate=1
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "vim-snippets"]
 
 " NerdTree Settings
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
+map <F4> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeWinPos="left"
 let g:NERDTreeShowHidden=1
