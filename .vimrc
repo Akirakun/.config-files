@@ -172,14 +172,14 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "vim-snippets"]
 
 " NerdTree Settings
 " autocmd vimenter * NERDTree
-map <F4> :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeWinPos="left"
 let g:NERDTreeShowHidden=1
 let g:NERDChristmasTree=1
 
 " Gundo Settings
-nnoremap <F2> :GundoToggle<CR>
+nnoremap <F3> :GundoToggle<CR>
 let g:gundo_width=40
 let g:gundo_preview_height=15
 let g:gundo_right=1
@@ -189,7 +189,7 @@ let g:gitgutter_realtime=1
 let g:gitgutter_eager=1
 
 " Keybindings
-nnoremap <F3> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
+nnoremap <F4> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-K> <C-W><C-K>

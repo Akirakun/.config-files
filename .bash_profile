@@ -5,8 +5,10 @@ export PATH="$HOME/.tmuxifier/bin:$PATH"
 export PS1="\n\e[38;5;44m\u\e[m\e[38;5;198m@\e[m\e[38;5;44m\H\e[m\e[38;5;69m|\e[m\e[38;5;14m\@\e[m \e[38;5;36m\d\e[m \e[38;5;69m|\e[m\e[38;5;46m\w\n\e[m\e[38;5;198m>>> \e[m"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export EDITOR=vim
 
 eval "$(tmuxifier init -)"
+export TMUXIFIER_LAYOUT_PATH="$HOME/.tmux-layouts"
 
 alias cp='cp -iv'
 alias mv='mv -iv'

@@ -248,8 +248,8 @@ statusbar = {
 };
 settings = {
   core = {
-    real_name = "Stephen Bryant";
-    user_name = "shabren";
+    real_name = "Kyle Schaare";
+    user_name = "Akira`kun";
     nick = "%_$*%_";
     timestamp_format = "%H:%M:%S";
     hostname = "";
@@ -263,7 +263,7 @@ settings = {
   };
   "perl/core/scripts" = {
     awl_block = "-22";
-    notifier_on_regex = "(?=^(?:(?!Sha`Bren).)*$).*";
+    notifier_on_regex = "(?=^(?:(?!Akira`kun).)*$).*";
     fancy_abbrev = "head";
     nicklist_height = "33";
     nicklist_width = "23";
@@ -273,4 +273,4 @@ settings = {
     neat_left_messages = "no";
   };
 };
-hilights = ( { text = "Sha`Bren"; nick = "yes"; word = "yes"; } );
+hilights = ( { text = "Akira`kun"; nick = "yes"; word = "yes"; } );
