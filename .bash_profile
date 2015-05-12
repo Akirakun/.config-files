@@ -29,7 +29,6 @@ fi
 ##############################################################
 # Alias listings
 ## Commands
-alias tmux="TERM=screen-256color-bce tmux"
 alias python=python3
 alias ls="ls -G"
 alias haste="HASTE_SERVER='http://drop1.shabren.com:7777' haste | pbcopy"

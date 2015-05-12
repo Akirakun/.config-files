@@ -34,10 +34,7 @@ set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
-"set textwidth=79
-set textwidth=110
 set laststatus=2
-"set statusline=%F%m%r%h%w\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%lL]
 set hlsearch
 set incsearch
 set scrolloff=5
@@ -154,7 +151,6 @@ let g:ycm_filetype_blacklist = {
       \ 'infolog' : 1,
       \ 'mail' : 1
       \}
-let g:ycm_key_invoke_completion = '<C-Space>'
 let g:ycm_filepath_completion_use_working_dir = 0
 set complete=.,b,u,]
 set wildmode=longest,list:longest
@@ -162,9 +158,9 @@ set completeopt=menu,preview
 
 " UltiSnips Settings
 " Trigger configuration. Do not use <tab> if you use YCM
-let g:UltiSnipsExpandTrigger='<C-H>'
-let g:UltiSnipsJumpForwardTrigger='<C-J>'
-let g:UltiSnipsJumpBackwardTrigger='<C-K>'
+let g:UltiSnipsExpandTrigger="<C-J>"
+let g:UltiSnipsJumpForwardTrigger="<C-J>"
+let g:UltiSnipsJumpBackwardTrigger="<C-K>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
@@ -201,3 +197,4 @@ map - <C-W>-
 map + <C-W>+
 map > <C-W>>
 map < <C-W><
+
